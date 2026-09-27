@@ -21,7 +21,20 @@
   <title>Road To 10K Running</title>
   <link rel="manifest" href="manifest.json">
 </head>
-<body>
+<body style="margin:0;background:#1F6FEB">
+  <!-- Splash while Flutter loads: the app's color and its mark, the same
+       as Android's and iOS's; fades out on Flutter's first frame. -->
+  <div id="splash" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#1F6FEB;transition:opacity 250ms ease-in">
+    <svg viewBox="0 0 100 100" width="120" height="120" aria-hidden="true"><defs><mask id="splash-mark" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><polyline points="56.00,37.00 46.00,56.00" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="46.00,56.00 62.00,60.00 60.00,72.00" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="46.00,56.00 37.00,66.00 24.00,63.00" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="55.00,40.00 65.00,48.00 72.00,41.00" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="55.00,40.00 45.00,47.00 40.00,55.00" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60.0" cy="27.0" r="6.5" fill="white"/><polyline points="18.00,80.00 70.00,80.00" fill="none" stroke="white" stroke-width="5.0" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80.0" cy="80.0" r="5.5" fill="white"/></mask></defs><rect width="100" height="100" fill="#FFFFFF" mask="url(#splash-mark)"/></svg>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var splash = document.getElementById('splash');
+      if (!splash) return;
+      splash.style.opacity = '0';
+      setTimeout(function () { splash.remove(); }, 300);
+    });
+  </script>
   <!-- flutter_soloud: picks its WASM audio build (sounds, DESIGN.md §2.9). -->
   <script src="assets/packages/flutter_soloud/web/init_soloud.js" defer></script>
   <script src="flutter_bootstrap.js" async></script>

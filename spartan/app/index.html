@@ -21,7 +21,20 @@
   <title>Road To Spartan</title>
   <link rel="manifest" href="manifest.json">
 </head>
-<body>
+<body style="margin:0;background:#8A6D3B">
+  <!-- Splash while Flutter loads: the app's color and its mark, the same
+       as Android's and iOS's; fades out on Flutter's first frame. -->
+  <div id="splash" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#8A6D3B;transition:opacity 250ms ease-in">
+    <svg viewBox="0 0 100 100" width="120" height="120" aria-hidden="true"><defs><mask id="splash-mark" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><polyline points="50.00,9.00 50.00,22.00" fill="none" stroke="white" stroke-width="9.0" stroke-linecap="round" stroke-linejoin="round"/><polygon points="29.00,42.00 29.40,38.10 30.60,34.35 32.54,30.89 35.15,27.86 38.33,25.37 41.96,23.52 45.90,22.38 50.00,22.00 54.10,22.38 58.04,23.52 61.67,25.37 64.85,27.86 67.46,30.89 69.40,34.35 70.60,38.10 71.00,42.00 71.00,66.00 58.00,71.00 56.00,56.00 44.00,56.00 42.00,71.00 29.00,66.00" fill="white"/><polyline points="37.00,45.00 63.00,45.00" fill="none" stroke="black" stroke-width="5.0" stroke-linecap="round" stroke-linejoin="round"/><polyline points="50.00,45.00 50.00,60.00" fill="none" stroke="black" stroke-width="5.0" stroke-linecap="round" stroke-linejoin="round"/><polyline points="18.00,80.00 70.00,80.00" fill="none" stroke="white" stroke-width="5.0" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80.0" cy="80.0" r="5.5" fill="white"/></mask></defs><rect width="100" height="100" fill="#FFFFFF" mask="url(#splash-mark)"/></svg>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var splash = document.getElementById('splash');
+      if (!splash) return;
+      splash.style.opacity = '0';
+      setTimeout(function () { splash.remove(); }, 300);
+    });
+  </script>
   <!-- flutter_soloud: picks its WASM audio build (sounds, DESIGN.md §2.9). -->
   <script src="assets/packages/flutter_soloud/web/init_soloud.js" defer></script>
   <script src="flutter_bootstrap.js" async></script>

@@ -1,5 +1,40 @@
 [
   {
+    "version": "0.9.0",
+    "date": "2026-09-27",
+    "notes": [
+      {
+        "type": "chore",
+        "subject": "copy, dependencies and docs for the new release"
+      },
+      {
+        "type": "feat",
+        "scope": "marketing",
+        "subject": "usage videos, lighter downloads and a one-command release"
+      },
+      {
+        "type": "feat",
+        "scope": "brand",
+        "subject": "a splash screen with each app's color and mark"
+      },
+      {
+        "type": "feat",
+        "scope": "growth",
+        "subject": "share presets and save to the gallery"
+      },
+      {
+        "type": "feat",
+        "scope": "session",
+        "subject": "an ongoing notification and a full-screen focus mode"
+      },
+      {
+        "type": "feat",
+        "scope": "feedback",
+        "subject": "lower the user's music for our cues, never pause it"
+      }
+    ]
+  },
+  {
     "version": "0.8.0",
     "date": "2026-09-27",
     "notes": [
