@@ -1,5 +1,26 @@
 [
   {
+    "version": "0.9.1",
+    "date": "2026-09-27",
+    "notes": [
+      {
+        "type": "feat",
+        "scope": "dev",
+        "subject": "a hidden developer mode with live sensor, recordings and a full log"
+      },
+      {
+        "type": "fix",
+        "scope": "auto-tracking",
+        "subject": "count real sit-ups and squats by the phone's tilt"
+      },
+      {
+        "type": "fix",
+        "scope": "release",
+        "subject": "push the release tag explicitly"
+      }
+    ]
+  },
+  {
     "version": "0.9.0",
     "date": "2026-09-27",
     "notes": [

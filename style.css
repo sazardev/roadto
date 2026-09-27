@@ -37,6 +37,10 @@ h1 { font-size: clamp(38px, 7vw, 64px); line-height: 1.02; letter-spacing: -.03e
   text-decoration: none; font-size: 16px; }
 .btn.primary { background: var(--accent); color: var(--on-accent); }
 .btn.secondary { background: var(--surface); color: var(--text); }
+.btn.soon { cursor: default; opacity: .85; }
+.badge { font-style: normal; font-size: 12px; font-weight: 600; letter-spacing: .02em;
+  padding: 2px 8px; margin-left: 6px; border-radius: 999px; vertical-align: middle;
+  background: var(--accent); color: var(--on-accent); }
 .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .fine { font-size: 14px; color: var(--muted); margin: 16px 0 0; }
 .hero-shot { justify-self: center; width: min(320px, 78vw); }
