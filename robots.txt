@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sazardev.github.io/roadto/sitemap.xml

@@ -1,0 +1,35 @@
+{
+    "name": "Road To 100 Push Ups",
+    "short_name": "Push Ups",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#E6533C",
+    "theme_color": "#E6533C",
+    "description": "A push-up plan that adapts to you every day, all the way to 100. Free, no accounts, no ads.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

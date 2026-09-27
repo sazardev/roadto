@@ -1,0 +1,35 @@
+{
+    "name": "Road To Spartan",
+    "short_name": "Spartan",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#8A6D3B",
+    "theme_color": "#8A6D3B",
+    "description": "Six challenges in one program: every day, the best exercise for you. Free, no accounts, no ads.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

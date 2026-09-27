@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Road To</title>
+<script>
+  var base = '/roadto';
+  var rest = location.pathname.slice(base.length);
+  var app = rest.match(/^\/([a-z_]+)\/app\//);
+  if (app) location.replace(base + '/' + app[1] + '/app/');
+</script>
+<link rel="stylesheet" href="/roadto/style.css">
+<style>:root{--accent:#6B7280}</style>
+</head>
+<body>
+<div class="wrap">
+  <main class="hero" style="grid-template-columns:1fr">
+    <div>
+      <h1>404</h1>
+      <p class="tagline">Esta página no existe. / This page doesn't exist.</p>
+      <div class="ctas"><a class="btn secondary" href="/roadto/">Road To</a></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
