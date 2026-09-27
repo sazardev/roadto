@@ -1,5 +1,50 @@
 [
   {
+    "version": "0.8.0",
+    "date": "2026-09-27",
+    "notes": [
+      {
+        "type": "chore",
+        "subject": "wire the new features through the app, copy, CI and docs"
+      },
+      {
+        "type": "fix",
+        "scope": "persistence",
+        "subject": "upgrade every database step by step, atomically"
+      },
+      {
+        "type": "feat",
+        "scope": "design",
+        "subject": "one number and one line per screen"
+      },
+      {
+        "type": "feat",
+        "scope": "feedback",
+        "subject": "sounds and vibration for every tap and every rep"
+      },
+      {
+        "type": "feat",
+        "scope": "growth",
+        "subject": "share your progress, rate the app, meet the family"
+      },
+      {
+        "type": "feat",
+        "scope": "marketing",
+        "subject": "landing pages and store screenshots for every app"
+      },
+      {
+        "type": "feat",
+        "scope": "platforms",
+        "subject": "give every desktop build its own name, id and icon"
+      },
+      {
+        "type": "fix",
+        "scope": "coach",
+        "subject": "stop flagging an on-plan week as an injury risk"
+      }
+    ]
+  },
+  {
     "version": "0.7.0",
     "date": "2026-09-26",
     "notes": [
