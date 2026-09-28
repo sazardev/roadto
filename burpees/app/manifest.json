@@ -1,0 +1,35 @@
+{
+    "name": "Road To 100 Burpees",
+    "short_name": "Burpees",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#B45309",
+    "theme_color": "#B45309",
+    "description": "A hundred burpees in a row, no equipment, on a plan that adapts. Free forever. No ads, no accounts.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
